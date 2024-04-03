@@ -1,3 +1,9 @@
+
+This repository contains the implementation of CI/CD workflow for Snowflake using Azure DevOps and Flyway
+
+The below are included files.
+```
+├── README.md
 ├── databases
 │   ├── README.md
 │   └── flyway_demo
@@ -11,6 +17,7 @@
     ├── TaskGroups
     ├── VariableGroups
     │   ├── Classic
+    │   │   └── Snowflake.Database.env      <- Variable group for Classic pipeline
     │   └── YAML
     │       └── Snowflake.Database.env      <- Variable group for YAML pipeline
     └── YAMLpipelines
@@ -18,3 +25,4 @@
         └── templates
             ├── snowflakeFlywayBuild.yml    <- YAML pipeline template for snowflake build using flyway
             └── snowflakeFlywayDeploy.yml   <- YAML pipeline template for snowflake deploy using flyway
+```
